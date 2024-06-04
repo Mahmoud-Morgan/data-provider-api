@@ -38,3 +38,21 @@ The API supports various filters that can be applied individually or in combinat
 3.Amount Range Filter: Filters results based on the specified minimum and maximum amount.
 
 4.Currency Filter: Filters results based on the specified currency.
+
+
+### Run Steps
+- build docker images
+
+        docker compose up -d
+
+- access docker container 
+  
+      docker exec -it php /bin/bash
+
+- install project dependencies 
+
+        composer install
+
+- run tests
+
+        php artisan test
